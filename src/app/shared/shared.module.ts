@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 
 /* Module Imports */
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { FooterComponent } from './components/footer/footer.component';
 
 /* Component Imports */
 
@@ -24,11 +25,13 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
         CollapseModule
     ],
     declarations: [
-        NavbarComponent
+        NavbarComponent,
+        FooterComponent
     ],
     exports: [
         CommonModule,
-        NavbarComponent
+        NavbarComponent,
+        FooterComponent
     ],
     providers: [
     ],

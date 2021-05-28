@@ -1,0 +1,87 @@
+@import "../../../../styles/custom/custom.scss";
+
+.footer {
+    margin-top: 50px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: $blue;
+    color: $white;
+}
+
+.footer-social {
+    font-size: 20px;
+    // color: #1D1D1F;
+}
+
+.footer-text {
+    font-size: 11px;
+    font-weight: 500;
+    // color: #1D1D1F;
+    // font-family: 'San Francisco', sans-serif;
+    font-family: 'Johnston';
+    letter-spacing: 0.2px;
+}
+
+.footer-links {
+    // font-family: 'San Francisco', sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+.footer-links .column {
+    display: flex;
+}
+
+.footer-link-header {
+    font-weight: 600;
+    // color: #1D1D1F;
+}
+
+.footer-link {
+    font-weight: 400;
+    color: #86868b;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-link.disabled {
+    // color: #86868b !important;
+    cursor: default;
+    // pointer-events: none;
+}
+
+.footer-links a, .footer-links p {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.footer-copyright, .footer-notice {
+    // font-family: 'San Francisco', sans-serif;
+    font-family: 'Johnston';
+    font-size: 0.75rem;
+    line-height: 1.8;
+    letter-spacing: 0.4px;
+    // color: #86868b;
+}
+
+.footer-copyright > .highlight, .footer-notice > .highlight {
+    font-weight: 600;
+    font-style: italic;
+    // color: #86868b;
+}
+
+
+.footer-flag {
+    width: 16px;
+}
+
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(210, 210, 215);
+}
+
+
