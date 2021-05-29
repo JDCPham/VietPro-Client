@@ -1,0 +1,23 @@
+@import "../../../../styles/custom/custom.scss";
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    // border: 1px solid $blue;
+    // border-radius: 0;
+}
+
+.card > img {
+    width: 80px;
+    border-radius: 80px;
+    // clip-path: polygon(100% 0, 0 15%, 70% 98%);
+}
+
+.card > .name {
+    font-size: 18px;
+    font-weight: 600;
+    color: $blue;
+    margin-top: 5px;
+}

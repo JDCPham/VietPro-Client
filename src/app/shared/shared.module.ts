@@ -12,6 +12,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 /* Module Imports */
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FooterComponent } from './components/footer/footer.component';
+import { CommitteeMembersComponent } from './components/committee-members/committee-members.component';
+import { HeadingComponent } from './components/heading/heading.component';
 
 /* Component Imports */
 
@@ -26,12 +28,16 @@ import { FooterComponent } from './components/footer/footer.component';
     ],
     declarations: [
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
+        CommitteeMembersComponent,
+        HeadingComponent
     ],
     exports: [
         CommonModule,
         NavbarComponent,
-        FooterComponent
+        FooterComponent,
+        CommitteeMembersComponent,
+        HeadingComponent
     ],
     providers: [
     ],

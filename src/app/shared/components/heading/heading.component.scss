@@ -1,0 +1,10 @@
+@import "../../../../styles/custom/custom.scss";
+
+#heading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: $blue;
+}
