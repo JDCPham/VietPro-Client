@@ -18,6 +18,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 /* Router Imports */
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './components/home/home.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { BannerSlideComponent } from './components/banner-slide/banner-slide.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { HomeComponent } from './components/home/home.component';
         CarouselModule.forRoot()
     ],
     declarations: [ 
-        HomeComponent
+        HomeComponent,
+        BannerComponent,
+        BannerSlideComponent
     ],
     exports: [
         CommonModule,

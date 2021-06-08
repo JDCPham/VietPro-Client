@@ -1,0 +1,12 @@
+<carousel [isAnimated]="isAnimated">
+    <slide *ngFor="let slide of slides">
+        <banner-slide
+            [image]="slide?.image"
+            [title]="slide?.title"
+            [subtitle]="slide?.subtitle"
+            [description]="slide?.description"
+            [button]="slide?.button"
+            [link]="slide?.link"
+        ></banner-slide>
+    </slide>
+</carousel>

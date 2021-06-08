@@ -14,6 +14,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FooterComponent } from './components/footer/footer.component';
 import { CommitteeMembersComponent } from './components/committee-members/committee-members.component';
 import { HeadingComponent } from './components/heading/heading.component';
+import { CommitteeMemberComponent } from './components/committee-member/committee-member.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 /* Component Imports */
 
@@ -24,13 +26,15 @@ import { HeadingComponent } from './components/heading/heading.component';
     imports: [
         CommonModule,
         RouterModule,
-        CollapseModule
+        CollapseModule,
+        FontAwesomeModule
     ],
     declarations: [
         NavbarComponent,
         FooterComponent,
         CommitteeMembersComponent,
-        HeadingComponent
+        HeadingComponent,
+        CommitteeMemberComponent
     ],
     exports: [
         CommonModule,

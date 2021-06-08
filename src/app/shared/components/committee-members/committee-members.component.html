@@ -1,81 +1,17 @@
-<div class="d-flex flex-column">
+<div class="d-flex flex-column py-5">
 
     <!-- Title -->
     <heading heading="Committee Members"></heading>
 
     <!-- Member Cards -->
     <div class="row mt-3">
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Names -->
-                <div class="name">John Pham</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Name -->
-                <div class="name">John Pham</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Name -->
-                <div class="name">John Pham</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Name -->
-                <div class="name">John Pham</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Name -->
-                <div class="name">John Pham</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Name -->
-                <div class="name">John Pham</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Name -->
-                <div class="name">John Pham</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Name -->
-                <div class="name">John Pham</div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 my-2">
-            <div class="card">
-                <!-- Image -->
-                <img src="assets/images/members/john-pham.jpeg">
-                <!-- Name -->
-                <div class="name">John Pham</div>
-            </div>
+        <div *ngFor="let member of members" class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+            <committee-member
+                [image]="member?.image?.fields?.file?.url"
+                [name]="member?.name"
+                [occupation]="member?.occupation"
+                [company]="member?.company">
+            </committee-member>
         </div>
         
     </div>
